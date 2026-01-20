@@ -85,12 +85,48 @@ main{
 .text-primary{
     color:#FF900E;
 }
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
 
 /* fact related style */
 .facts-container{
   display:grid;
     grid-template-columns: repeat(4,1fr);
 }
+.feature-card{
+     padding:30px;
+   box-shadow: 0px 4px 30px 0 rgba(0, 0, 0, 0.06);
+   margin-bottom: 20px;
+    border-radius: 8px;
+}
+  .features{
+    display: flex;
+    
+    gap: 140px;
+  
+  }
+.feature-card .feature-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+  
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 .fact-card{
     border:1px solid #FF900E;
     width: 240px;
@@ -138,9 +174,7 @@ main{
     margin-top: 130px;
 
 }
-.team-img-container, .facts-container, .sponsor-companies{
-    grid-template-columns: repeat(1,1fr);
-}
+
 .facts-container{
     justify-items: center;
     gap: 24px;
@@ -185,5 +219,9 @@ main{
 .sponsor-companies, .facts-container{
     grid-template-columns: repeat(3,1fr);
     gap: 50px;
+    justify-items: center;
+}
+.team-img-container, .facts-container, .sponsor-companies{
+    grid-template-columns: repeat(1,1fr);
 }
 
